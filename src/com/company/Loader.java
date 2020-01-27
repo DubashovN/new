@@ -21,11 +21,15 @@ public class Loader {
         System.out.println(count);
     }
 
+    String fixed;
     void apple(String string, char a) {
         System.out.println(string);
         for (int i = 0; i < string.length(); i++) {
-            if (string.charAt(i) == a)
-            System.out.print('^');
+            if (string.charAt(i) == a){
+                fixed = string.replace(a, '^');
+                 }
+            }
+        System.out.println(fixed);
         }
     }
 
@@ -34,4 +38,4 @@ public class Loader {
     //Apple
     // ^^
 
-}
+
